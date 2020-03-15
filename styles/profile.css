@@ -1,0 +1,75 @@
+body{
+    background-image: url(../image/posse4.jpg);
+   background-size: cover;
+   overflow-y: hidden;
+   background-repeat: no-repeat;
+   
+   
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.76);
+}
+
+.imge{
+    padding:30px;
+    margin: 10px;
+}
+
+.seal{
+    font-size: large;
+    float: right;
+    padding-right: 4cm;
+    padding-top: 30px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: -1px -1px black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+.below{
+    font-size: smaller;
+    display: block;
+    text-align: center;
+}
+
+.other{
+    display: block;
+}
+hr{
+    width:100%;
+    border: 2px solid white;
+    text-shadow: -1px -1px black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+p{
+    padding-top: 15px;
+    text-align: justify;
+}
+h1{
+    text-align: center;
+}
+
+h3{
+    padding: 4px;
+    font-size: xx-large;
+}
+
+img{
+    border-radius: 3cm;
+}
+
+@media screen and (max-width: 768px){
+    body{
+        background-image: url(../image/posse4vert.jpg);
+        height: fit-content;
+    }
+    .seal{
+        padding: 2cm;
+        text-align: left;
+        font-size: small;
+        
+    }
+    .seal h3{
+        font-size: small;
+    }
+}

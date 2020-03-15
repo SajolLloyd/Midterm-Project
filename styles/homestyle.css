@@ -1,0 +1,47 @@
+.background {
+     background-image: url(../image/elephseal4.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 20cm;
+     background-position: center;
+    
+    
+     
+}
+
+.Message{
+     padding-top: 10cm;
+     text-align: center;
+     font-family: Arial, Helvetica, sans-serif;
+     color: rgba(245, 245, 245, 0.938);
+     letter-spacing: 4px;
+     font-size: large;
+     
+}
+span{
+     display: block;
+}
+
+hr{
+     margin-top: 2cm;
+     height: 2px
+}
+body{
+     overflow-y: hidden;
+}
+
+@media screen and (max-width: 768px){
+     .background{
+          background-image: url(../image/elephsemall4.jpg);
+          background-size: cover;
+     background-repeat: no-repeat;
+     height: 20cm;
+     background-position: center;
+     }
+     body h1{
+          font-size: larger;
+     }
+     body{
+          overflow-y: hidden;
+     }
+}

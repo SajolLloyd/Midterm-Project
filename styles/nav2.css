@@ -1,0 +1,127 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-style: solid;
+    border-color: grey;
+    border-width: 2px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+}
+
+.nav-links a{
+    text-decoration: none;
+}
+
+nav ul li{
+    display: inline-block;
+    padding-top: 10px;
+    padding-right: 20px; 
+    font-weight: bold;
+    letter-spacing: 3px;
+   
+}
+
+nav a{
+    color: black;
+    text-shadow: -1px -1px white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
+a.active{
+    background-color: rgba(255, 255, 255, 0.897);
+    padding: 10px;
+    border-radius: 2cm;
+    color: white;
+    text-shadow: -1px -1px black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    list-style: none;
+}
+
+nav li:hover a{
+    color: white;
+    background-color: white;
+    padding: 10px;
+    border-radius: 2cm;
+    font-size: larger;
+    text-shadow: -1px -1px black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.logo{
+    border-radius: 3cm;
+}
+.lines{
+    display: none;
+    cursor: pointer;
+}
+
+.lines div{
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+}
+
+@media screen and (max-width: 1024px){
+    .nav-links{
+        width: 60% 
+    }
+}
+
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    nav{
+        background-color: rgba(0, 0, 0, 0.76);
+    }
+    .nav-links{
+        background-color: rgba(0, 0, 0, 0.76);
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 11.5vh;
+        display: flex;
+        flex-direction: column;
+        align-items:center; 
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .lines{
+        
+        display: block;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    body{
+        filter: blur(8px);
+    }
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform : translateX(0px );
+    }
+}
